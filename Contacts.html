@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - Coach Potatoe</title>
+
+  <!-- Polices et styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/liste.css" />
+</head>
+
+<body class="bg-gradient-to-br from-yellow-50 via-orange-100 to-yellow-200 text-gray-800">
+
+  <!-- HEADER -->
+  <header class="bg-white bg-opacity-80 backdrop-blur-md shadow-lg sticky top-0 z-50 border-b border-yellow-300">
+    <div class="flex justify-between items-center p-5 rounded-b-2xl w-full max-w-6xl mx-auto">
+      <nav class="flex gap-8 text-gray-800 font-semibold text-lg">
+         <a href="ESSAI1.html"class="hover:text-yellow-600 transition-all duration-300 hover:scale-105">Accueil</a>
+        <a href="Nos coachs.html" class="hover:text-yellow-600 transition-all duration-300 hover:scale-105">Nos coachs</a>
+        <a href="Formations.html"class="hover:text-yellow-600 transition-all duration-300 hover:scale-105">Formations</a>
+        <a href="Langues.html"class="hover:text-yellow-600 transition-all duration-300 hover:scale-105">Langues</a>
+        <a href="Contacts.html"class="hover:text-yellow-600 transition-all duration-300 hover:scale-105">Contact</a>
+        <a href="FAQ.html"class="hover:text-yellow-600 transition-all duration-300 hover:scale-105">FAQ</a>
+        <a href="Compte.html"class="hover:text-yellow-600 transition-all duration-300 hover:scale-105">Mon compte</a>
+      </nav>
+      <button class="bg-yellow-400 px-4 py-2 rounded-full hover:bg-yellow-500 shadow-lg transition">🔍</button>
+    </div>
+  </header>
+
+  <!-- CONTENU PRINCIPAL -->
+  <main class="min-h-screen flex flex-col items-center justify-center px-6 py-20">
+    <h1 class="text-5xl font-extrabold text-yellow-600 mb-6 text-center" style="font-family: 'Lobster', cursive;">
+      Contactez-nous 📬
+    </h1>
+    <p class="text-gray-700 max-w-2xl text-center mb-10 text-lg">
+      Une question, une demande d’information ou simplement envie d’échanger avec nous ?  
+      Remplissez le formulaire ci-dessous et notre équipe reviendra vers vous rapidement 💛
+    </p>
+
+    <!-- FORMULAIRE -->
+    <form class="bg-white bg-opacity-80 backdrop-blur-md p-8 rounded-3xl shadow-xl w-full max-w-2xl space-y-6">
+      <!-- Nom -->
+      <div>
+        <label for="name" class="block text-gray-700 font-semibold mb-2">Nom complet</label>
+        <input
+          type="text"
+          id="name"
+          placeholder="Votre nom"
+          class="w-full px-4 py-3 rounded-lg border border-yellow-300 focus:ring-2 focus:ring-yellow-400 outline-none transition"
+          required
+        />
+      </div>
+
+      <!-- Email -->
+      <div>
+        <label for="email" class="block text-gray-700 font-semibold mb-2">Adresse e-mail</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="exemple@email.com"
+          class="w-full px-4 py-3 rounded-lg border border-yellow-300 focus:ring-2 focus:ring-yellow-400 outline-none transition"
+          required
+        />
+      </div>
+
+      <!-- Sujet -->
+      <div>
+        <label for="subject" class="block text-gray-700 font-semibold mb-2">Sujet</label>
+        <input
+          type="text"
+          id="subject"
+          placeholder="Sujet de votre message"
+          class="w-full px-4 py-3 rounded-lg border border-yellow-300 focus:ring-2 focus:ring-yellow-400 outline-none transition"
+        />
+      </div>
+
+      <!-- Message -->
+      <div>
+        <label for="message" class="block text-gray-700 font-semibold mb-2">Message</label>
+        <textarea
+          id="message"
+          rows="5"
+          placeholder="Votre message ici..."
+          class="w-full px-4 py-3 rounded-lg border border-yellow-300 focus:ring-2 focus:ring-yellow-400 outline-none transition resize-none"
+          required
+        ></textarea>
+      </div>
+
+      <!-- Bouton -->
+      <div class="text-center">
+        <button
+          type="submit"
+          class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-yellow-400/50 transition-all duration-300"
+        >
+          ✉️ Envoyer le message
+        </button>
+      </div>
+    </form>
+
+    <!-- Info de contact -->
+    <div class="mt-16 text-gray-700 text-center">
+      <p class="font-semibold text-lg">📞 01 23 45 67 89</p>
+      <p class="text-sm">Disponible du lundi au vendredi, de 9h à 18h</p>
+      <p class="mt-2">📧 contact@coachpotatoe.fr</p>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-gradient-to-r from-yellow-300 to-orange-300 p-6 text-center text-gray-800 shadow-inner mt-16">
+    <p>© 2025 Coach Potatoe — Tous droits réservés</p>
+  </footer>
+
+</body>
+</html>

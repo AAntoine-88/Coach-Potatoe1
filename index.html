@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Coach Potatoe</title>
+
+  <!-- Police Lobster + Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+
+  <!-- Ton CSS -->
+  <link rel="stylesheet" href="css/liste.css" />
+</head>
+
+<body class="bg-gradient-to-br from-yellow-50 via-orange-100 to-yellow-200 text-gray-800">
+
+<!-- HEADER -->
+<header class="bg-white bg-opacity-80 backdrop-blur-md shadow-lg sticky top-0 z-50 border-b border-yellow-300 animate-fade-down">
+  <div class="flex justify-between items-center p-5 rounded-b-2xl w-full max-w-6xl mx-auto">
+    <nav class="flex gap-8 text-gray-800 font-semibold text-lg">
+      <a href="Nos coachs.html" class="hover:text-yellow-600 transition-all duration-300 hover:scale-105">Nos coachs</a>
+      <a href="Formations.html" class="hover:text-yellow-600 transition-all duration-300 hover:scale-105">Formations</a>
+      <a href="Langues.html" class="hover:text-yellow-600 transition-all duration-300 hover:scale-105">Langues</a>
+      <a href="Contacts.html" class="hover:text-yellow-600 transition-all duration-300 hover:scale-105">Contacts</a>
+      <a href="FAQ.html" class="hover:text-yellow-600 transition-all duration-300 hover:scale-105">FAQ</a>
+      <a href="Compte.html" class="hover:text-yellow-600 transition-all duration-300 hover:scale-105">Mon compte</a>
+    </nav>
+
+   
+    <!-- Bouton recherche -->
+    <div class="relative">
+      <button id="searchBtn" class="bg-yellow-400 px-4 py-2 rounded-full hover:bg-yellow-500 shadow-lg hover:shadow-yellow-400/50 transition-all duration-300">
+        🔍
+      </button>
+
+      <!-- Champ de recherche (hidden par défaut) -->
+      <input 
+        id="searchInput"
+        type="text"
+        placeholder="Tapez votre recherche..."
+        class="absolute right-0 top-full mt-2 w-64 px-4 py-2 rounded-lg border border-yellow-300 shadow-md bg-white hidden transition-all duration-300 focus:outline-none"
+      />
+    </div>
+  </div>
+</header>
+
+
+
+  <!-- SECTION 3 COLONNES -->
+  <main class="grid grid-cols-1 lg:grid-cols-3 items-center justify-center gap-12 px-10 py-20 min-h-[80vh]">
+
+    <!-- COLONNE GAUCHE (Texte) -->
+    <div class="space-y-6 animate-fade-up text-left">
+      <h1 class="text-6xl font-extrabold text-gray-900" style="font-family: 'Lobster', cursive;">
+        Coach Potatoe
+      </h1>
+      <h2 class="text-3xl text-yellow-600 font-semibold">
+        La Formation qu’il vous faut !
+      </h2>
+      <p class="text-gray-700 leading-relaxed text-lg">
+        Des coachs passionnés vous accompagnent pour révéler votre plein potentiel et séduire vos futurs employeurs 💼✨.
+      </p>
+      <a href="#" class="inline-block bg-gradient-to-r from-yellow-400 to-orange-400 text-gray-800 font-semibold px-8 py-4 rounded-full shadow-lg hover:from-yellow-500 hover:to-orange-500 transform hover:scale-105 transition-all duration-300">
+        Accédez à notre plateforme en ligne 🚀
+      </a>
+    </div>
+
+    <!-- COLONNE CENTRALE (Mascotte) -->
+    <div class="relative flex justify-center items-center animate-bounce-slow">
+      <div class="absolute -inset-4 bg-yellow-300 rounded-full blur-2xl opacity-30"></div>
+      <img
+        src="images/CoachPotatoe.png"
+        alt="Mascotte Coach Potatoe"
+        class="w-96 h-96 object-contain relative z-10 hover:scale-110 transition-transform duration-500 drop-shadow-2xl"
+      />
+    </div>
+
+    <!-- COLONNE DROITE (Formations) -->
+    <div class="bg-white bg-opacity-70 backdrop-blur-md border border-yellow-300 shadow-2xl rounded-3xl p-8 max-w-md justify-self-end hover:scale-105 transition-transform duration-500 animate-fade-up">
+      <h3 class="font-bold text-2xl mb-4 text-yellow-600">Nos formations</h3>
+      <ul class="list-disc ml-6 text-gray-700 space-y-2 text-lg">
+        <li>CV et lettres de motivation</li>
+        <li>Trouver un emploi</li>
+        <li>Leadership & Soft Skills</li>
+      </ul>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-gradient-to-r from-yellow-300 to-orange-300 p-6 text-center text-gray-800 shadow-inner mt-10 animate-fade-up">
+    <div class="flex justify-center gap-6 mb-3">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa" class="h-6" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" class="h-6" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Mastercard_2019_logo.svg" alt="Mastercard" class="h-6" />
+    </div>
+    <p>
+      Retrouvez-nous sur :
+      <a href="#" class="text-blue-700 underline hover:text-blue-900 transition">Instagram</a> |
+      <a href="#" class="text-blue-700 underline hover:text-blue-900 transition">LinkedIn</a>
+    </p>
+    <p class="mt-2 text-sm">Mentions légales | Protection des données | CGV</p>
+  </footer>
+
+</body>
+</html>

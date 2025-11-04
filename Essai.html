@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Coach Potatoe</title>
+
+  <!-- Lien vers la police Lobster -->
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- CSS local -->
+  <link rel="stylesheet" href="css/liste.css" />
+</head>
+<header class="flex justify-between items-center p-4 bg-yellow-200 shadow-md w-full max-w-full">
+  <nav class="flex gap-6 text-gray-800 font-semibold">
+    <a href="#">Formations</a>
+    <a href="#">Langues</a>
+    <a href="#">Contact</a>
+    <a href="#">FAQ</a>
+    <a href="#">Mon compte</a>
+  </nav>
+  <button class="bg-yellow-400 px-3 py-1 rounded-full hover:bg-yellow-500 shadow">🔍</button>
+</header>
+
+
+  <!-- SECTION PRINCIPALE -->
+
+  <div
+    class="bg-yellow-100 p-6 rounded-2xl shadow-md mt-10 lg:absolute lg:bottom-100 lg:right-100"
+  >
+    <h3 class="font-bold text-lg mb-2">Formations</h3>
+    <ul class="list-disc ml-5 text-gray-700">
+      <li>CV et lettres de motivation</li>
+      <li>Trouver un emploi</li>
+      <li>Leadership</li>
+    </ul>
+  </div>
+
+  <main class="flex flex-col lg:flex-row items-center justify-around p-10 min-h-[80vh]">
+    <div class="max-w-lg">
+      <h1
+        class="text-5xl font-extrabold text-gray-800 mb-4 capitalize"
+        style="font-family: 'Lobster', cursive;"
+      >
+        coach potatoe
+      </h1>
+      <h2 class="text-2xl text-yellow-500 mb-6">La Formation qu’il vous faut !</h2>
+      <p class="text-gray-700 mb-6">
+        Avec des coachs qui vous aideront à vous développer et à devenir plus attractif aux yeux de vos futurs employeurs.
+      </p>
+      <a
+        href="#"
+        class="bg-yellow-400 text-gray-800 font-semibold px-6 py-3 rounded-full shadow hover:bg-yellow-500 transition"
+      >
+        Accédez à notre plateforme en ligne
+      </a>
+    </div>
+
+    <!-- Emplacement pour mascotte -->
+    <div>
+      <img
+        src="images/CoachPotatoe.png"
+        alt="Mascotte Coach Potatoe"
+        class="w-80 h-80 object-contain"
+      />
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-yellow-200 p-4 mt-10 text-sm text-center text-gray-700">
+    <div class="flex justify-center gap-4 mb-2">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png"
+        alt="Visa"
+        class="h-6"
+      />
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg"
+        alt="PayPal"
+        class="h-6"
+      />
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Mastercard_2019_logo.svg"
+        alt="Mastercard"
+        class="h-6"
+      />
+    </div>
+    <p>
+      Retrouvez-nous sur :
+      <a href="#" class="text-blue-600 underline">Instagram</a> |
+      <a href="#" class="text-blue-600 underline">LinkedIn</a>
+    </p>
+    <p class="mt-2">Mentions légales | Protection des données | CGV</p>
+  </footer>
+</body>
+</html>
